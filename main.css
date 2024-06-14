@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'xd';
+    src: url('fonts/ROAD\ TO\ JUSTICE.otf') format('truetype'),
+         url('fonts/ROAD\ TO\ JUSTICE.otf') format('woff');
+}
+* {
+    user-select: none;
+}
+
+
+body {
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: wheat; 
+    margin: 0; 
+    font-family: "xd";
+    color: black; 
+    font-size: 25px;
+}
+
+.main {
+    position: relative;
+    text-align: center;
+}
+
+.logo2 {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto; /* Centra el logo horizontalmente */
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px; /* Ajusta según tu necesidad */
+    height: 500px; /* Ajusta según tu necesidad */
+    margin-top: -250px; /* Mitad de la altura para centrar */
+    margin-left: -250px; /* Mitad de la anchura para centrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 150px; /* Ajusta el tamaño del botón según necesites */
+    height: 180Px; /* Ajusta el tamaño del botón según necesites */
+    margin: 20px; /* Espacio entre cada botón */
+    text-align: center;
+    text-decoration: none;
+    position: absolute; /* Importante para posicionar correctamente */
+    overflow: hidden; /* Para que el efecto de sombra no sobresalga del botón */
+    transition: transform 0.3s ease-in-out;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+}
+
+.botonimg {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Alto de la imagen */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor manteniendo su relación de aspecto */
+    transition: filter 0.3s; /* Animación del efecto de sombra */
+}
+
+.button-text {
+    margin-top: 10px; /* Ajusta el espacio entre la imagen y el texto */
+    font-size: 20px;
+    color: black; /* Puedes ajustar el color según sea necesario */
+    margin-bottom: 22px;
+}
+
+/* Posiciones circulares para 6 botones */
+.button:nth-child(1) {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.button:nth-child(2) {
+    transform: rotate(60deg) translate(200px) rotate(-60deg);
+}
+
+.button:nth-child(3) {
+    transform: rotate(120deg) translate(200px) rotate(-120deg);
+}
+
+.button:nth-child(4) {
+    transform: rotate(180deg) translate(200px) rotate(-180deg);
+}
+
+.button:nth-child(5) {
+    transform: rotate(240deg) translate(200px) rotate(-240deg);
+}
+
+.button:nth-child(6) {
+    transform: rotate(300deg) translate(200px) rotate(-300deg);
+}
+
+.button:hover .botonimg {
+    filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.75)); /* Ajusta el color y la intensidad según prefieras */
+}
