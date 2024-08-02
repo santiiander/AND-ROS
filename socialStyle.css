@@ -10,7 +10,7 @@ body {
 
 .social-container {
     display: flex;
-    gap: 30px; /* Ajusta el espacio entre los iconos aquí */
+    gap: 30px; 
 }
 
 .social-icon {
